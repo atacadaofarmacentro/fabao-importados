@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
@@ -19,13 +20,13 @@
           },
           colors: {
             fabao: {
-              bg: '#060913',
-              surface: '#0d1326',
-              card: '#131c36',
-              blue: '#2563eb',
-              cyan: '#06b6d4',
-              electric: '#38bdf8',
-              gold: '#f59e0b',
+              bg: '#0b0b0f',
+              surface: '#17171f',
+              card: '#1d1d27',
+              blue: '#7e22ce',
+              cyan: '#ff6b00',
+              electric: '#ffb000',
+              gold: '#ff8a00',
               whatsapp: '#25D366',
               whatsappDark: '#1ebe5d'
             }
@@ -36,34 +37,34 @@
   </script>
   <style>
     body {
-      background-color: #060913;
+      background-color: #0b0b0f;
       color: #f8fafc;
       overflow-x: hidden;
     }
     .hero-glow {
       background:
-        radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22) 0%, transparent 45%),
-        radial-gradient(circle at 85% 30%, rgba(6, 182, 212, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 15% 20%, rgba(255, 138, 0, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(126, 34, 206, 0.16) 0%, transparent 45%),
         radial-gradient(circle at 50% 90%, rgba(37, 211, 102, 0.08) 0%, transparent 40%),
         #060913;
     }
     .glass-card {
-      background: rgba(19, 28, 54, 0.72);
+      background: rgba(29, 29, 39, 0.78);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(255, 138, 0, 0.16);
     }
     .glass-card:hover {
-      border-color: rgba(6, 182, 212, 0.45);
-      box-shadow: 0 12px 32px -8px rgba(6, 182, 212, 0.22);
+      border-color: rgba(255, 107, 0, 0.48);
+      box-shadow: 0 12px 32px -8px rgba(255, 107, 0, 0.18);
     }
     .text-gradient {
-      background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 50%, #60a5fa 100%);
+      background: linear-gradient(135deg, #ffbd2e 0%, #ff8a00 52%, #ff5a00 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .gold-gradient {
-      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      background: linear-gradient(135deg, #ffbd2e 0%, #ff6b00 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -76,15 +77,15 @@
       animation: pulse-green 2.2s infinite;
     }
     ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #060913; }
-    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 999px; }
-    ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    ::-webkit-scrollbar-track { background: #0b0b0f; }
+    ::-webkit-scrollbar-thumb { background: #34343d; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #ff6b00; }
   </style>
 </head>
-<body class="antialiased selection:bg-fabao-cyan selection:text-slate-950">
+<body class="antialiased selection:bg-fabao-cyan selection:text-neutral-950">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 bg-fabao-bg/85 backdrop-blur-lg border-b border-slate-800/80">
+  <header class="sticky top-0 z-50 bg-fabao-bg/85 backdrop-blur-lg border-b border-neutral-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <a href="#inicio" class="flex items-center gap-3 group">
@@ -97,7 +98,7 @@
           </div>
         </a>
 
-        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-neutral-300">
           <a href="#inicio" class="hover:text-fabao-cyan transition-colors">Início</a>
           <a href="#catalogo" class="hover:text-fabao-cyan transition-colors">Catálogo da Vitrine</a>
           <a href="#manutencao" class="hover:text-fabao-gold transition-colors flex items-center gap-1.5">
@@ -107,19 +108,19 @@
         </nav>
 
         <div class="flex items-center gap-2.5 sm:gap-3">
-          <button onclick="abrirDrawerLista()" class="relative p-3 rounded-xl bg-fabao-card border border-slate-700/80 hover:border-fabao-cyan text-slate-200 hover:text-fabao-cyan transition-all cursor-pointer">
+          <button onclick="abrirDrawerLista()" class="relative p-3 rounded-xl bg-fabao-card border border-neutral-700/80 hover:border-fabao-cyan text-neutral-200 hover:text-fabao-cyan transition-all cursor-pointer">
             <i class="fa-solid fa-bag-shopping text-lg"></i>
-            <span id="badge-contador" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-fabao-cyan text-slate-950 font-extrabold text-[11px] flex items-center justify-center shadow">0</span>
+            <span id="badge-contador" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-fabao-cyan text-neutral-950 font-extrabold text-[11px] flex items-center justify-center shadow">0</span>
           </button>
 
           <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Vim%20pelo%20site%20da%20Banca%20dos%20Importados%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
              target="_blank" rel="noopener noreferrer"
-             class="hidden sm:inline-flex items-center gap-2 bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-slate-950 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-green-500/20 hover:-translate-y-0.5">
+             class="hidden sm:inline-flex items-center gap-2 bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-neutral-950 font-bold px-4 py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-green-500/20 hover:-translate-y-0.5">
             <i class="fa-brands fa-whatsapp text-lg"></i>
             <span>(61) 9303-6613</span>
           </a>
 
-          <button id="btn-mobile-menu" class="lg:hidden p-3 rounded-xl bg-fabao-card border border-slate-700/80 text-slate-200 hover:text-fabao-cyan">
+          <button id="btn-mobile-menu" class="lg:hidden p-3 rounded-xl bg-fabao-card border border-neutral-700/80 text-neutral-200 hover:text-fabao-cyan">
             <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
@@ -127,14 +128,14 @@
     </div>
 
     <!-- Menu Mobile -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-fabao-surface border-b border-slate-800 px-4 pt-3 pb-6 space-y-2">
-      <a href="#inicio" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-slate-200 hover:bg-slate-800/70 hover:text-fabao-cyan font-medium">Início</a>
-      <a href="#catalogo" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-slate-200 hover:bg-slate-800/70 hover:text-fabao-cyan font-medium">Catálogo Completo</a>
-      <a href="#manutencao" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-amber-300 hover:bg-slate-800/70 font-medium">Manutenção & Bateria de Relógios</a>
-      <a href="#lista-rapida" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-slate-200 hover:bg-slate-800/70 hover:text-fabao-cyan font-medium">Monte seu Pedido</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-fabao-surface border-b border-neutral-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="#inicio" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-neutral-200 hover:bg-neutral-800/70 hover:text-fabao-cyan font-medium">Início</a>
+      <a href="#catalogo" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-neutral-200 hover:bg-neutral-800/70 hover:text-fabao-cyan font-medium">Catálogo Completo</a>
+      <a href="#manutencao" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-amber-300 hover:bg-neutral-800/70 font-medium">Manutenção & Bateria de Relógios</a>
+      <a href="#lista-rapida" class="mobile-nav-link block py-2.5 px-3 rounded-xl text-neutral-200 hover:bg-neutral-800/70 hover:text-fabao-cyan font-medium">Monte seu Pedido</a>
       <div class="pt-2">
         <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Vim%20pelo%20site." target="_blank"
-           class="flex items-center justify-center gap-2 w-full bg-fabao-whatsapp text-slate-950 font-extrabold py-3 rounded-xl">
+           class="flex items-center justify-center gap-2 w-full bg-fabao-whatsapp text-neutral-950 font-extrabold py-3 rounded-xl">
           <i class="fa-brands fa-whatsapp text-xl"></i>
           <span>WhatsApp: (61) 9303-6613</span>
         </a>
@@ -143,7 +144,7 @@
   </header>
 
   <!-- HERO -->
-  <section id="inicio" class="hero-glow relative py-16 sm:py-24 border-b border-slate-800/80 overflow-hidden">
+  <section id="inicio" class="hero-glow relative py-16 sm:py-24 border-b border-neutral-800/80 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
@@ -154,18 +155,18 @@
           <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
             Banca dos Importados <span class="text-gradient block sm:inline">do Fabão</span>
           </h1>
-          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p class="text-neutral-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Tudo em <strong class="text-white">relógios, fones Bluetooth, carregadores turbo, cabos, controles remotos, caixinhas de som</strong> e assistência rápida:
             <span class="text-amber-400 font-semibold">diminuímos pulseira de relógio, trocamos bateria e fazemos manutenção na hora!</span>
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
             <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20e%20servi%C3%A7os%20da%20banca."
                target="_blank" rel="noopener noreferrer"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-slate-950 font-extrabold px-7 py-4 rounded-2xl text-base transition-all shadow-xl shadow-green-500/25 hover:-translate-y-0.5">
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-neutral-950 font-extrabold px-7 py-4 rounded-2xl text-base transition-all shadow-xl shadow-green-500/25 hover:-translate-y-0.5">
               <i class="fa-brands fa-whatsapp text-2xl"></i>
               <span>Chamar no WhatsApp (61) 9303-6613</span>
             </a>
-            <a href="#catalogo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-fabao-card hover:bg-slate-800 border border-slate-700 text-white font-bold px-7 py-4 rounded-2xl text-base transition-all">
+            <a href="#catalogo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-fabao-card hover:bg-neutral-800 border border-neutral-700 text-white font-bold px-7 py-4 rounded-2xl text-base transition-all">
               <i class="fa-solid fa-grid-2 text-fabao-cyan"></i>
               <span>Ver Produtos</span>
             </a>
@@ -181,33 +182,33 @@
               </span>
             </div>
             <div class="grid grid-cols-2 gap-3.5">
-              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 transition-all">
+              <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 hover:border-amber-500/40 transition-all">
                 <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-fabao-gold flex items-center justify-center text-lg mb-3">
                   <i class="fa-regular fa-clock"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Relógios & Ajuste</h3>
-                <p class="text-xs text-slate-400 mt-1">Masculinos, femininos, troca de bateria e pulseira</p>
+                <p class="text-xs text-neutral-400 mt-1">Masculinos, femininos, troca de bateria e pulseira</p>
               </div>
-              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/40 transition-all">
+              <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 hover:border-cyan-500/40 transition-all">
                 <div class="w-10 h-10 rounded-xl bg-cyan-500/15 text-fabao-cyan flex items-center justify-center text-lg mb-3">
                   <i class="fa-solid fa-ear-listen"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Fones AirDots / TWS</h3>
-                <p class="text-xs text-slate-400 mt-1">Sem fio Bluetooth e modelos com fio reforçado</p>
+                <p class="text-xs text-neutral-400 mt-1">Sem fio Bluetooth e modelos com fio reforçado</p>
               </div>
-              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-blue-500/40 transition-all">
+              <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 hover:border-blue-500/40 transition-all">
                 <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center text-lg mb-3">
                   <i class="fa-solid fa-plug-circle-bolt"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Carregadores Turbo</h3>
-                <p class="text-xs text-slate-400 mt-1">H'Maston, Lehmox, Cabos HDMI, Tipo-C e Power Bank</p>
+                <p class="text-xs text-neutral-400 mt-1">H'Maston, Lehmox, Cabos HDMI, Tipo-C e Power Bank</p>
               </div>
-              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-purple-500/40 transition-all">
+              <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 hover:border-purple-500/40 transition-all">
                 <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center text-lg mb-3">
                   <i class="fa-solid fa-gamepad"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Controles & Som</h3>
-                <p class="text-xs text-slate-400 mt-1">Controles de TV, caixinhas Bluetooth, suportes e mouses</p>
+                <p class="text-xs text-neutral-400 mt-1">Controles de TV, caixinhas Bluetooth, suportes e mouses</p>
               </div>
             </div>
           </div>
@@ -217,9 +218,9 @@
   </section>
 
   <!-- MANUTENÇÃO -->
-  <section id="manutencao" class="py-16 sm:py-20 bg-fabao-surface border-b border-slate-800/80">
+  <section id="manutencao" class="py-16 sm:py-20 bg-fabao-surface border-b border-neutral-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-[#131c36] to-slate-900 border border-amber-500/30 p-6 sm:p-10 lg:p-12 shadow-2xl relative overflow-hidden">
+      <div class="rounded-3xl bg-gradient-to-br from-neutral-900 via-[#131c36] to-neutral-900 border border-amber-500/30 p-6 sm:p-10 lg:p-12 shadow-2xl relative overflow-hidden">
         <div class="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
           <div class="lg:col-span-7 space-y-4">
@@ -229,60 +230,60 @@
             <h2 class="font-display text-3xl sm:text-4xl font-black text-white">
               Manutenção de Relógios e <span class="gold-gradient">Ajustes na Hora</span>
             </h2>
-            <p class="text-slate-300 text-base leading-relaxed">
+            <p class="text-neutral-300 text-base leading-relaxed">
               Comprou um relógio novo e ficou folgado no pulso? O relógio parou de funcionar? Aqui na <strong class="text-white">Banca dos Importados do Fabão</strong> resolvemos na hora com agilidade e cuidado!
             </p>
             <div class="grid sm:grid-cols-3 gap-4 pt-3">
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
+              <div class="p-4 rounded-2xl bg-neutral-950/70 border border-neutral-800">
                 <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-fabao-gold flex items-center justify-center text-lg mb-2.5">
                   <i class="fa-solid fa-link-slash"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Diminuição de Pulseira</h3>
-                <p class="text-xs text-slate-400 mt-1">Ajuste perfeito de elos de aço e pulseiras no tamanho do seu pulso.</p>
+                <p class="text-xs text-neutral-400 mt-1">Ajuste perfeito de elos de aço e pulseiras no tamanho do seu pulso.</p>
               </div>
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
+              <div class="p-4 rounded-2xl bg-neutral-950/70 border border-neutral-800">
                 <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-fabao-gold flex items-center justify-center text-lg mb-2.5">
                   <i class="fa-solid fa-battery-full"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Troca de Bateria</h3>
-                <p class="text-xs text-slate-400 mt-1">Baterias de qualidade para relógios analógicos e digitais.</p>
+                <p class="text-xs text-neutral-400 mt-1">Baterias de qualidade para relógios analógicos e digitais.</p>
               </div>
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
+              <div class="p-4 rounded-2xl bg-neutral-950/70 border border-neutral-800">
                 <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-fabao-gold flex items-center justify-center text-lg mb-2.5">
                   <i class="fa-solid fa-gears"></i>
                 </div>
                 <h3 class="font-bold text-white text-sm">Manutenção em Geral</h3>
-                <p class="text-xs text-slate-400 mt-1">Troca de pinos, fechos, pulseiras novas e reparos rápidos.</p>
+                <p class="text-xs text-neutral-400 mt-1">Troca de pinos, fechos, pulseiras novas e reparos rápidos.</p>
               </div>
             </div>
           </div>
 
           <div class="lg:col-span-5">
-            <div class="bg-slate-950/85 border border-slate-800 rounded-2xl p-6 space-y-4">
+            <div class="bg-neutral-950/85 border border-neutral-800 rounded-2xl p-6 space-y-4">
               <h3 class="font-display text-lg font-extrabold text-white flex items-center gap-2">
                 <i class="fa-solid fa-calendar-check text-fabao-gold"></i>
                 Solicitar Serviço ou Orçamento
               </h3>
               <div class="space-y-2.5">
                 <button onclick="adicionarItemLista('Serviço: Diminuição/Ajuste de Pulseira de Relógio', 'Manutenção')"
-                        class="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
+                        class="w-full py-3 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
                   <span><i class="fa-solid fa-plus text-fabao-gold mr-2"></i> Diminuir pulseira de relógio</span>
                   <span class="text-xs text-amber-400 font-bold">+ Lista</span>
                 </button>
                 <button onclick="adicionarItemLista('Serviço: Troca de Bateria de Relógio', 'Manutenção')"
-                        class="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
+                        class="w-full py-3 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
                   <span><i class="fa-solid fa-plus text-fabao-gold mr-2"></i> Trocar bateria de relógio</span>
                   <span class="text-xs text-amber-400 font-bold">+ Lista</span>
                 </button>
                 <button onclick="adicionarItemLista('Serviço: Manutenção de Relógio em Geral', 'Manutenção')"
-                        class="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
+                        class="w-full py-3 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-amber-400 text-left text-sm font-semibold text-white flex items-center justify-between transition-all cursor-pointer">
                   <span><i class="fa-solid fa-plus text-fabao-gold mr-2"></i> Manutenção em geral</span>
                   <span class="text-xs text-amber-400 font-bold">+ Lista</span>
                 </button>
               </div>
               <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Preciso%20de%20manuten%C3%A7%C3%A3o%20%2F%20troca%20de%20bateria%20%2F%20ajuste%20de%20pulseira%20no%20meu%20rel%C3%B3gio."
                  target="_blank"
-                 class="w-full py-3.5 px-5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-amber-500/20">
+                 class="w-full py-3.5 px-5 rounded-xl bg-amber-500 hover:bg-amber-400 text-neutral-950 font-extrabold text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-amber-500/20">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
                 <span>Falar com o Fabão Agora</span>
               </a>
@@ -299,35 +300,35 @@
       <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
         <span class="text-fabao-cyan font-bold text-sm uppercase tracking-widest">Vitrine Completa</span>
         <h2 class="font-display text-3xl sm:text-4xl font-black text-white">Produtos Disponíveis na Banca</h2>
-        <p class="text-slate-400 text-base">
+        <p class="text-neutral-400 text-base">
           Filtre por categoria ou pesquise o item que procura. Clique em <strong class="text-white">"Consultar"</strong> para perguntar o valor direto no WhatsApp ou adicione vários itens na sua lista.
         </p>
       </div>
 
       <div class="glass-card rounded-2xl p-4 sm:p-5 mb-10 space-y-4">
         <div class="relative">
-          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400"></i>
           <input type="text" id="input-busca" oninput="filtrarProdutos()"
                  placeholder="Buscar produto... Ex: relógio, carregador turbo, fone bluetooth, controle TV..."
-                 class="w-full bg-slate-950/90 border border-slate-700/80 focus:border-fabao-cyan rounded-xl pl-11 pr-4 py-3.5 text-sm text-white placeholder-slate-500 outline-none transition-colors">
+                 class="w-full bg-neutral-950/90 border border-neutral-700/80 focus:border-fabao-cyan rounded-xl pl-11 pr-4 py-3.5 text-sm text-white placeholder-neutral-500 outline-none transition-colors">
         </div>
         <div id="filtros-categorias" class="flex flex-wrap items-center gap-2">
-          <button onclick="selecionarCategoria('todos', this)" class="cat-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-fabao-cyan text-slate-950 transition-all cursor-pointer">Todos os Produtos</button>
-          <button onclick="selecionarCategoria('relogios', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 transition-all cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> Relógios</button>
-          <button onclick="selecionarCategoria('audio', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 transition-all cursor-pointer"><i class="fa-solid fa-headphones mr-1"></i> Fones & Caixas</button>
-          <button onclick="selecionarCategoria('energia', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 transition-all cursor-pointer"><i class="fa-solid fa-bolt mr-1"></i> Carregadores & Cabos</button>
-          <button onclick="selecionarCategoria('acessorios', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800 transition-all cursor-pointer"><i class="fa-solid fa-tv mr-1"></i> Controles & Acessórios</button>
+          <button onclick="selecionarCategoria('todos', this)" class="cat-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-fabao-cyan text-neutral-950 transition-all cursor-pointer">Todos os Produtos</button>
+          <button onclick="selecionarCategoria('relogios', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition-all cursor-pointer"><i class="fa-regular fa-clock mr-1"></i> Relógios</button>
+          <button onclick="selecionarCategoria('audio', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition-all cursor-pointer"><i class="fa-solid fa-headphones mr-1"></i> Fones & Caixas</button>
+          <button onclick="selecionarCategoria('energia', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition-all cursor-pointer"><i class="fa-solid fa-bolt mr-1"></i> Carregadores & Cabos</button>
+          <button onclick="selecionarCategoria('acessorios', this)" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition-all cursor-pointer"><i class="fa-solid fa-tv mr-1"></i> Controles & Acessórios</button>
         </div>
       </div>
 
       <div id="grid-produtos" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
 
       <div id="sem-resultados" class="hidden text-center py-14 space-y-3">
-        <i class="fa-solid fa-box-open text-4xl text-slate-600"></i>
+        <i class="fa-solid fa-box-open text-4xl text-neutral-600"></i>
         <h3 class="text-lg font-bold text-white">Nenhum produto encontrado</h3>
-        <p class="text-sm text-slate-400">Chame o Fabão no WhatsApp que verificamos no estoque.</p>
+        <p class="text-sm text-neutral-400">Chame o Fabão no WhatsApp que verificamos no estoque.</p>
         <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Estou%20procurando%20um%20produto%20espec%C3%ADfico." target="_blank"
-           class="inline-flex items-center gap-2 bg-fabao-whatsapp text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm mt-2">
+           class="inline-flex items-center gap-2 bg-fabao-whatsapp text-neutral-950 font-bold px-5 py-2.5 rounded-xl text-sm mt-2">
           <i class="fa-brands fa-whatsapp"></i> Perguntar no WhatsApp
         </a>
       </div>
@@ -335,14 +336,14 @@
   </section>
 
   <!-- LISTA RÁPIDA -->
-  <section id="lista-rapida" class="py-16 sm:py-20 bg-fabao-surface border-t border-slate-800/80">
+  <section id="lista-rapida" class="py-16 sm:py-20 bg-fabao-surface border-t border-neutral-800/80">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-neutral-800">
           <div>
             <span class="text-xs font-bold uppercase tracking-wider text-fabao-cyan">Orçamento Fácil</span>
             <h2 class="font-display text-2xl sm:text-3xl font-black text-white mt-1">Sua Lista de Interesse</h2>
-            <p class="text-xs sm:text-sm text-slate-400 mt-1">Adicione os produtos ou serviços e envie tudo de uma vez para o Fabão.</p>
+            <p class="text-xs sm:text-sm text-neutral-400 mt-1">Adicione os produtos ou serviços e envie tudo de uma vez para o Fabão.</p>
           </div>
           <button onclick="limparLista()" id="btn-limpar-lista" class="hidden self-start sm:self-center text-xs font-semibold text-rose-400 hover:text-rose-300 bg-rose-500/10 border border-rose-500/20 px-3.5 py-2 rounded-xl transition-colors cursor-pointer">
             <i class="fa-solid fa-trash-can mr-1"></i> Limpar Lista
@@ -351,15 +352,15 @@
 
         <div id="container-itens-lista" class="py-6"></div>
 
-        <div class="pt-4 border-t border-slate-800 space-y-4">
+        <div class="pt-4 border-t border-neutral-800 space-y-4">
           <div>
-            <label for="obs-cliente" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Observação (opcional)</label>
+            <label for="obs-cliente" class="block text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">Observação (opcional)</label>
             <input type="text" id="obs-cliente" oninput="atualizarLinkListaWhatsApp()"
                    placeholder="Ex: Controle da TV Samsung, carregador Tipo-C, relógio dourado..."
-                   class="w-full bg-slate-950/90 border border-slate-700/80 focus:border-fabao-cyan rounded-xl px-4 py-3.5 text-sm text-white placeholder-slate-500 outline-none transition-colors">
+                   class="w-full bg-neutral-950/90 border border-neutral-700/80 focus:border-fabao-cyan rounded-xl px-4 py-3.5 text-sm text-white placeholder-neutral-500 outline-none transition-colors">
           </div>
           <a id="btn-enviar-lista" href="#" target="_blank"
-             class="w-full py-4 rounded-2xl bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-slate-950 font-extrabold text-base flex items-center justify-center gap-2 transition-all shadow-lg shadow-green-500/25">
+             class="w-full py-4 rounded-2xl bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-neutral-950 font-extrabold text-base flex items-center justify-center gap-2 transition-all shadow-lg shadow-green-500/25">
             <i class="fa-brands fa-whatsapp text-xl"></i>
             <span>Enviar Lista no WhatsApp</span>
           </a>
@@ -370,19 +371,19 @@
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
   <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Vim%20pelo%20site." target="_blank"
-     class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-fabao-whatsapp text-slate-950 flex items-center justify-center text-3xl shadow-2xl whatsapp-pulse hover:scale-110 transition-transform">
+     class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-fabao-whatsapp text-neutral-950 flex items-center justify-center text-3xl shadow-2xl whatsapp-pulse hover:scale-110 transition-transform">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <!-- FOOTER -->
-  <footer class="bg-fabao-bg border-t border-slate-800 py-10">
+  <footer class="bg-fabao-bg border-t border-neutral-800 py-10">
     <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
       <p class="font-display font-bold text-white text-lg">Banca dos Importados do Fabão</p>
-      <p class="text-slate-400 text-sm">Relógios • Eletrônicos • Manutenção Rápida</p>
+      <p class="text-neutral-400 text-sm">Relógios • Eletrônicos • Manutenção Rápida</p>
       <a href="https://wa.me/5561993036613" target="_blank" class="inline-flex items-center gap-2 text-fabao-whatsapp font-bold">
         <i class="fa-brands fa-whatsapp"></i> (61) 9303-6613
       </a>
-      <p class="text-slate-600 text-xs pt-4">© 2026 – Todos os direitos reservados</p>
+      <p class="text-neutral-600 text-xs pt-4">© 2026 – Todos os direitos reservados</p>
     </div>
   </footer>
 
@@ -428,15 +429,15 @@
             <i class="fa-solid fa-box"></i>
           </div>
           <h3 class="font-bold text-white text-base mb-1">${p.nome}</h3>
-          <p class="text-xs text-slate-400 mb-4 flex-1">${p.desc}</p>
+          <p class="text-xs text-neutral-400 mb-4 flex-1">${p.desc}</p>
           <div class="flex gap-2">
             <button onclick="adicionarItemLista('${p.nome}', '${p.categoria}')"
-                    class="flex-1 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-bold text-white transition-all">
+                    class="flex-1 py-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-xs font-bold text-white transition-all">
               + Lista
             </button>
             <a href="https://wa.me/5561993036613?text=Ol%C3%A1%20Fab%C3%A3o!%20Gostaria%20de%20consultar%20o%20valor%20do%20produto:%20${encodeURIComponent(p.nome)}"
                target="_blank"
-               class="flex-1 py-2.5 rounded-xl bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-slate-950 text-xs font-bold flex items-center justify-center gap-1 transition-all">
+               class="flex-1 py-2.5 rounded-xl bg-fabao-whatsapp hover:bg-fabao-whatsappDark text-neutral-950 text-xs font-bold flex items-center justify-center gap-1 transition-all">
               <i class="fa-brands fa-whatsapp"></i> Consultar
             </a>
           </div>
@@ -461,11 +462,11 @@
     function selecionarCategoria(cat, btn) {
       categoriaAtual = cat;
       document.querySelectorAll('.cat-btn').forEach(b => {
-        b.classList.remove('active', 'bg-fabao-cyan', 'text-slate-950');
-        b.classList.add('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
+        b.classList.remove('active', 'bg-fabao-cyan', 'text-neutral-950');
+        b.classList.add('bg-neutral-900', 'text-neutral-300', 'border', 'border-neutral-800');
       });
-      btn.classList.add('active', 'bg-fabao-cyan', 'text-slate-950');
-      btn.classList.remove('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
+      btn.classList.add('active', 'bg-fabao-cyan', 'text-neutral-950');
+      btn.classList.remove('bg-neutral-900', 'text-neutral-300', 'border', 'border-neutral-800');
       filtrarProdutos();
     }
 
@@ -493,13 +494,13 @@
       btnLimpar.classList.toggle('hidden', listaItens.length === 0);
 
       if (listaItens.length === 0) {
-        container.innerHTML = `<p class="text-center text-slate-500 text-sm py-8">Nenhum item na lista ainda.<br>Adicione produtos ou serviços acima.</p>`;
+        container.innerHTML = `<p class="text-center text-neutral-500 text-sm py-8">Nenhum item na lista ainda.<br>Adicione produtos ou serviços acima.</p>`;
       } else {
         container.innerHTML = listaItens.map((item, i) => `
-          <div class="flex items-center justify-between py-3 border-b border-slate-800 last:border-0">
+          <div class="flex items-center justify-between py-3 border-b border-neutral-800 last:border-0">
             <div>
               <p class="font-semibold text-white text-sm">${item.nome}</p>
-              <p class="text-xs text-slate-400">${item.categoria}</p>
+              <p class="text-xs text-neutral-400">${item.categoria}</p>
             </div>
             <button onclick="removerItemLista(${i})" class="text-rose-400 hover:text-rose-300 p-2">
               <i class="fa-solid fa-trash-can"></i>
